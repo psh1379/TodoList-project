@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import soloprojecttodo.domain.member.entity.Member;
 import soloprojecttodo.domain.member.repository.MemberRepository;
+import soloprojecttodo.global.exception.BusinessLogicException;
+import soloprojecttodo.global.exception.ExceptionCode;
 
 import java.util.Optional;
 
