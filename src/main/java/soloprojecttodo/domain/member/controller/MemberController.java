@@ -56,7 +56,9 @@ public class MemberController {
 
         return new ResponseEntity(new SingleResponseDto<>(member), HttpStatus.OK);
     }
-
+    /*
+    USER-04: 회원탈퇴
+     */
     @DeleteMapping("{member-id}")
     public ResponseEntity deleteMember(@PathVariable("member-id") @Positive long memberId) {
         memberService.deleteMember(memberId);
